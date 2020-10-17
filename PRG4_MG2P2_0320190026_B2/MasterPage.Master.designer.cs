@@ -15,6 +15,15 @@ namespace PRG4_MG2P2_0320190026_B2
     {
 
         /// <summary>
+        /// Header control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder Header;
+
+        /// <summary>
         /// MainContent control.
         /// </summary>
         /// <remarks>
@@ -22,5 +31,14 @@ namespace PRG4_MG2P2_0320190026_B2
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent;
+
+        /// <summary>
+        /// Footer control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ContentPlaceHolder Footer;
     }
 }

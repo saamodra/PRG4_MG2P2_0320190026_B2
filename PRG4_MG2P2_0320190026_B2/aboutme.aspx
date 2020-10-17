@@ -1,5 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="aboutme.aspx.cs" Inherits="PRG4_MG2P2_0320190026_B2.aboutme" %>
 
+<asp:Content ID="Content2" ContentPlaceHolderID="Header" runat="server">
+   <xsam:NavbarWhite runat="server" />
+</asp:Content>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
   <div class="grid">
     <div>
@@ -32,12 +36,14 @@
 
     </div>
   </div>
+</asp:Content>
 
+<asp:Content ID="Content3" ContentPlaceHolderID="Footer" runat="server">
+  <xsam:Footer runat="server"/>
+  
   <script type="text/javascript">
     document.addEventListener("DOMContentLoaded", () => {
-      changeNav(2);
       changeClass("body", "about-me");
-      changeLogo(2);
     });
   </script>
 </asp:Content>

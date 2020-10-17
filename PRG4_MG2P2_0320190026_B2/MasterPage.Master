@@ -9,26 +9,10 @@
     <link href="css/apercu.css" rel="stylesheet" type="text/css"/>
 </head>
 <body class="index" id="body">
-    <nav id="navbar">
-        <div class="navbar-brand">
-            <a href="index.aspx" class="text-white">SM.</a>
-        </div>
-
-        <div class="menu m-0">
-            <a href="index.aspx" class="text-purple">Home</a>
-            <a href="aboutme.aspx" class="text-purple">About Me</a>
-            <a href="links.aspx" class="text-purple">Links</a>
-            <a href="guestbook.aspx" class="text-purple">Guestbook</a>
-            <a href="0320190026KonversiTemperatur.aspx" class="text-purple">Temp. Convert</a>
-        </div>
-    </nav>
-    <header id="home-header">
-        <nav>
-          <div class="navbar-brand">
-            <a href="index.aspx">SM.</a>
-          </div>
-        </nav>
-    </header>
+    
+    <asp:ContentPlaceHolder ID="Header" runat="server">
+    </asp:ContentPlaceHolder>
+   
 
     <main>
         <div class="content">
@@ -37,10 +21,8 @@
         </div>
     </main>
 
-
-    <footer>
-        <p>Feel free to <a href="mailto:szsamodra@gmail.com" class="btn-purple-outline-1">mail me</a> at any time</p>
-    </footer>
+    <asp:ContentPlaceHolder ID="Footer" runat="server">
+    </asp:ContentPlaceHolder>
     
     <script type="text/javascript">
         function changeClass(obj, className) {
@@ -50,7 +32,6 @@
 
         function changeNav(type) {
             const header = document.getElementById('home-header');
-            const nav = document.getElementById('navbar');
 
             if (type == 1) {
                 nav.style.display = "none";

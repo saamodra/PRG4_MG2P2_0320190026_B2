@@ -1,4 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="0320190026KonversiTemperatur.aspx.cs" Inherits="PRG4_MG2P2_0320190026_B2._0320190026KonversiTemperatur" %>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="Header" runat="server">
+   <xsam:NavbarPurple runat="server" />
+</asp:Content>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
   <div class="form-container">
     <h2 class="form-title">Celcius to Fahrenheit</h2>
@@ -27,11 +32,9 @@
       </table>
     </form>
   </div>
-
-  <script type="text/javascript">
-    document.addEventListener("DOMContentLoaded", () => {
-      changeNav(2);
-      changeLogo(1);
-    });
-  </script>
 </asp:Content>
+
+<asp:Content ID="Content3" ContentPlaceHolderID="Footer" runat="server">
+  <xsam:Footer runat="server"/>
+</asp:Content>
+
